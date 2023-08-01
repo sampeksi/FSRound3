@@ -8,7 +8,8 @@
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:ui": "rm -rf build && cd ../fullStack/osa2/puhelinluettelo && npm run build && cp -r build ../../../FSRound3",
-    "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push"
+    "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push",
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,11 @@
   },
   "proxy": "http://localhost:3001",
   "devDependencies": {
+    "eslint": "^8.46.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.28.0",
+    "eslint-plugin-n": "^16.0.1",
+    "eslint-plugin-promise": "^6.1.1",
     "nodemon": "^3.0.1"
   }
 }
