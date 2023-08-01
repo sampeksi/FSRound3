@@ -7,7 +7,7 @@
     "start": "node index.js",
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:ui": "rm -rf build && cd ../frontend && npm run build && cp -r build ../../../FSRound3",
+    "build:ui": "rm -rf build && cd ../fullStack/osa2/puhelinluettelo && npm run build && cp -r build ../../../FSRound3",
     "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push"
   },
   "repository": {
@@ -17,11 +17,12 @@
   "author": "Sampo Suokuisma",
   "license": "MIT",
   "dependencies": {
+    "axios": "^1.4.0",
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "mongodb": "^5.7.0",
-    "mongoose": "^7.3.4",
+    "mongoose": "^7.4.1",
     "morgan": "^1.10.0"
   },
   "proxy": "http://localhost:3001",
