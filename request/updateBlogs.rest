@@ -1,0 +1,10 @@
+PUT http://localhost:3001/api/blogs/64e3bd3260ea48238de24f8d
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImxvZ2luVGVzdCIsImlkIjoiNjRlM2I2ZGMwMzM5MmJmMDBmN2JjM2MzIiwiaWF0IjoxNjkyNjQ2ODI3fQ.9WFooHkplMwmD4hY2uuTJGwfSehgsOksEegJ0bEMDuo
+
+{
+    "title": "updateTest",
+    "author": "sampeksi",
+    "url": "http://localhost",
+    "likes": 5
+}

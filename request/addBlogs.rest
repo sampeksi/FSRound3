@@ -1,0 +1,9 @@
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImxvZ2luVGVzdCIsImlkIjoiNjRlM2I2ZGMwMzM5MmJmMDBmN2JjM2MzIiwiaWF0IjoxNjk1NDgyMjIzfQ.Yvn4u-ctlowFm-kcBaQRkHlZGx4Noa8sOxK7yusBmms
+{    
+    "title": "frontTest",
+    "author": "loginTest",
+    "url": "http://localhost",
+    "likes": 3
+}
